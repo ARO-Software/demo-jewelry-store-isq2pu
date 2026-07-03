@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مجوهرات غالب وزياد | ذهب وسبائك في قلب عمّان</title>
+<meta name="description" content="مجوهرات غالب وزياد — ذهب عيار ٢١ و ٢٢، سلاسل وأطقم وخواتم وأساور، في شارع السلطان قلاوون بعمّان. بيع وشراء وتصميم حسب الطلب.">
+<meta name="theme-color" content="#0B0B0C">
+
+<meta property="og:title" content="مجوهرات غالب وزياد">
+<meta property="og:description" content="ذهب فاخر وأطقم مميّزة في قلب عمّان.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#0B0B0C;
+  --ink-2:#131110;
+  --ink-3:#1c1813;
+  --line:#2a241a;
+  --gold:#c9a24b;
+  --gold-hi:#f1d98a;
+  --gold-deep:#8a6a28;
+  --cream:#ece3d0;
+  --muted:#a89c84;
+  --white:#f7f3ea;
+  --grad-gold:linear-gradient(135deg,#8a6a28 0%,#c9a24b 30%,#f1d98a 52%,#c9a24b 74%,#8a6a28 100%);
+  --shadow:0 24px 60px -24px rgba(0,0,0,.75);
+  --meander:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cpath d='M3 3 h14 v14 h-11 v-9 h5 v4' fill='none' stroke='%23c9a24b' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+
+body{
+  font-family:'Tajawal',system-ui,sans-serif;
+  background:var(--ink);
+  color:var(--cream);
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+::selection{background:var(--gold);color:var(--ink)}
+
+h1,h2,h3,.display{font-family:'Amiri',serif;font-weight:700;line-height:1.25}
+.latin{font-family:'Cormorant Garamond',serif;letter-spacing:.02em}
+
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+.wrap{width:min(1120px,92vw);margin-inline:auto}
+
+.gold-text{
+  background:var(--grad-gold);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+
+/* ---- meander frieze signature ---- */
+.frieze{
+  height:22px;
+  background-image:var(--meander);
+  background-repeat:repeat-x;
+  background-position:center;
+  border-top:1px solid var(--gold-deep);
+  border-bottom:1px solid var(--gold-deep);
+  opacity:.55;
+}
+
+/* ---- section divider (diamond hairline) ---- */
+.divider{
+  display:flex;align-items:center;justify-content:center;gap:1rem;
+  color:var(--gold);margin:0 auto;width:min(340px,70vw);
+}
+.divider::before,.divider::after{
+  content:"";height:1px;flex:1;
+  background:linear-gradient(90deg,transparent,var(--gold-deep));
+}
+.divider::after{background:linear-gradient(270deg,transparent,var(--gold-deep))}
+.divider span{font-size:.7rem;letter-spacing:.3em}
+
+/* ================= HEADER ================= */
+.header{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  padding:1.15rem 0;
+  transition:padding .35s ease, background .35s ease, border-color .35s ease;
+  border-bottom:1px solid transparent;
+}
+.header.scrolled{
+  padding:.55rem 0;
+  background:rgba(11,11,12,.82);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;flex-direction:column;line-height:1}
+.brand .mark{font-family:'Amiri',serif;font-weight:700;font-size:clamp(1.15rem,4.4vw,1.5rem)}
+.brand .sub{font-size:.62rem;letter-spacing:.34em;color:var(--muted);margin-top:.35rem}
+.brand .latin{font-size:.62rem;letter-spacing:.34em}
+.nav-links{display:none;gap:2rem;font-size:.9rem;color:var(--cream)}
+.nav-links a{position:relative;padding:.25rem 0;color:var(--muted);transition:color .25s}
+.nav-links a::after{content:"";position:absolute;bottom:-2px;right:0;width:0;height:1px;background:var(--gold);transition:width .3s ease}
+.nav-links a:hover{color:var(--cream)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{
+  display:inline-flex;align-items:center;gap:.5rem;
+  min-height:44px;padding:.6rem 1.3rem;border-radius:999px;
+  border:1px solid var(--gold-deep);color:var(--gold-hi);
+  font-size:.85rem;font-weight:500;white-space:nowrap;
+  transition:background .3s,color .3s,border-color .3s,transform .3s;
+}
+.nav-cta:hover{background:var(--grad-gold);color:var(--ink);border-color:transparent;transform:translateY(-1px)}
+@media(min-width:860px){.nav-links{display:flex}}
+
+/* ================= HERO ================= */
+.hero{
+  position:relative;min-height:100svh;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:8rem 0 3.5rem;overflow:hidden;
+}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 32%;opacity:.34;filter:saturate(1.05)}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(120% 80% at 50% 8%,rgba(201,162,75,.16),transparent 55%),
+    linear-gradient(180deg,rgba(11,11,12,.72) 0%,rgba(11,11,12,.86) 55%,var(--ink) 100%);
+}
+.hero-inner{position:relative;z-index:1;text-align:center;display:flex;flex-direction:column;align-items:center}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:.8rem;
+  font-size:.72rem;letter-spacing:.4em;color:var(--gold);
+  margin-bottom:1.6rem;
+}
+.hero-eyebrow::before,.hero-eyebrow::after{content:"";width:34px;height:1px;background:var(--gold-deep)}
+.hero h1{
+  font-size:clamp(2.9rem,13vw,6rem);
+  line-height:1.05;margin-bottom:.4rem;
+  text-shadow:0 2px 40px rgba(0,0,0,.5);
+}
+.hero .estd{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,4vw,1.4rem);color:var(--muted);margin-bottom:1.7rem}
+.hero-lede{
+  font-size:clamp(1rem,4.4vw,1.3rem);color:var(--cream);
+  max-width:34ch;margin:0 auto 2.4rem;font-weight:300;
+}
+.hero-lede b{color:var(--gold-hi);font-weight:500}
+.hero-cta{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  min-height:52px;padding:.9rem 1.9rem;border-radius:999px;
+  font-family:'Tajawal',sans-serif;font-size:1rem;font-weight:700;
+  cursor:pointer;transition:transform .3s ease,box-shadow .3s ease,background .3s;
+  will-change:transform;
+}
+.btn-gold{background:var(--grad-gold);color:var(--ink);box-shadow:0 12px 30px -12px rgba(201,162,75,.6)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 20px 40px -14px rgba(201,162,75,.7)}
+.btn-ghost{border:1px solid var(--gold-deep);color:var(--gold-hi)}
+.btn-ghost:hover{background:rgba(201,162,75,.08);transform:translateY(-3px)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+.scroll-cue{
+  position:absolute;bottom:1.6rem;left:50%;transform:translateX(-50%);z-index:1;
+  color:var(--muted);font-size:.62rem;letter-spacing:.3em;
+  display:flex;flex-direction:column;align-items:center;gap:.6rem;
+}
+.scroll-cue .line{width:1px;height:38px;background:linear-gradient(var(--gold),transparent);animation:cue 2.4s ease-in-out infinite}
+@keyframes cue{0%,100%{transform:scaleY(.4);opacity:.4;transform-origin:top}50%{transform:scaleY(1);opacity:1;transform-origin:top}}
+
+/* ================= SECTION SHELL ================= */
+section{position:relative}
+.pad{padding:clamp(4rem,10vw,7rem) 0}
+.eyebrow{
+  display:block;font-size:.7rem;letter-spacing:.36em;color:var(--gold);
+  margin-bottom:1rem;
+}
+.sec-title{font-size:clamp(2rem,7.5vw,3.2rem);margin-bottom:1.1rem}
+.sec-intro{color:var(--muted);max-width:52ch;font-weight:300;font-size:1.05rem}
+.center{text-align:center}
+.center .sec-intro{margin-inline:auto}
+
+/* ================= ABOUT ================= */
+.about{background:var(--ink-2)}
+.about-grid{display:grid;gap:2.6rem;align-items:center}
+.about-copy p{color:var(--cream);margin-bottom:1.2rem;font-weight:300}
+.about-copy p b{color:var(--gold-hi);font-weight:500}
+.about-figure{position:relative}
+.about-figure .photo{
+  border-radius:6px;overflow:hidden;box-shadow:var(--shadow);
+  border:1px solid var(--line);aspect-ratio:4/5;
+}
+.about-figure .photo img{width:100%;height:100%;object-fit:cover}
+.about-figure .badge{
+  position:absolute;bottom:-18px;inset-inline-start:-14px;
+  background:var(--ink);border:1px solid var(--gold-deep);border-radius:4px;
+  padding:.9rem 1.2rem;text-align:center;box-shadow:var(--shadow);
+}
+.about-figure .badge .n{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;line-height:1}
+.about-figure .badge .l{font-size:.6rem;letter-spacing:.24em;color:var(--muted);margin-top:.3rem}
+.stats{display:flex;gap:2.4rem;flex-wrap:wrap;margin-top:2rem;padding-top:2rem;border-top:1px solid var(--line)}
+.stat .n{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;line-height:1}
+.stat .l{font-size:.78rem;color:var(--muted);letter-spacing:.05em}
+@media(min-width:820px){.about-grid{grid-template-columns:1fr 1fr;gap:4rem}}
+
+/* ================= COLLECTIONS ================= */
+.col-grid{display:grid;gap:1.4rem;margin-top:3rem}
+.card{
+  position:relative;border:1px solid var(--line);border-radius:6px;
+  background:var(--ink-2);overflow:hidden;
+  transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .5s,box-shadow .5s;
+  will-change:transform;
+}
+.card:hover{transform:translateY(-6px);border-color:var(--gold-deep);box-shadow:var(--shadow)}
+.card .media{position:relative;aspect-ratio:5/4;overflow:hidden;background:var(--ink-3)}
+.card .media img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.card:hover .media img{transform:scale(1.07)}
+.card .media.pattern{display:grid;place-items:center}
+.card .media.pattern .glyph{font-family:'Amiri',serif;font-size:4rem;color:var(--gold-deep);opacity:.7}
+.card .media.pattern::before{
+  content:"";position:absolute;inset:0;
+  background-image:var(--meander);background-size:22px;opacity:.12;
+}
+.card .body{padding:1.5rem 1.4rem 1.7rem}
+.card .k{font-size:.62rem;letter-spacing:.28em;color:var(--gold);display:block;margin-bottom:.6rem}
+.card h3{font-size:1.5rem;margin-bottom:.5rem}
+.card p{font-size:.94rem;color:var(--muted);font-weight:300}
+@media(min-width:640px){.col-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.col-grid{grid-template-columns:repeat(3,1fr)}}
+
+/* services strip */
+.services{margin-top:1.4rem;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.service{background:var(--ink-2);padding:1.4rem 1.3rem;display:flex;gap:1rem;align-items:flex-start}
+.service .ico{color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;line-height:1;flex:none}
+.service h4{font-family:'Tajawal',sans-serif;font-weight:700;font-size:1.02rem;margin-bottom:.2rem}
+.service p{font-size:.85rem;color:var(--muted);font-weight:300}
+@media(min-width:720px){.services{grid-template-columns:repeat(3,1fr)}}
+
+/* ================= GALLERY ================= */
+.gallery{background:var(--ink-2)}
+.gal-grid{display:grid;gap:1rem;margin-top:3rem}
+.gal-item{position:relative;overflow:hidden;border-radius:6px;border:1px solid var(--line);background:var(--ink-3)}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.8,.2,1)}
+.gal-item:hover img{transform:scale(1.08)}
+.gal-item .cap{
+  position:absolute;inset-inline:0;bottom:0;padding:1.4rem 1.2rem .9rem;
+  background:linear-gradient(transparent,rgba(11,11,12,.85));
+  font-size:.82rem;color:var(--cream);letter-spacing:.02em;
+  transform:translateY(8px);opacity:0;transition:transform .4s,opacity .4s;
+}
+.gal-item:hover .cap{transform:translateY(0);opacity:1}
+.gal-tall{aspect-ratio:3/4}
+.gal-wide{aspect-ratio:3/4}
+@media(min-width:720px){
+  .gal-grid{grid-template-columns:repeat(3,1fr);grid-auto-rows:1fr}
+  .gal-item{aspect-ratio:auto}
+  .gal-a{grid-row:span 2}
+}
+
+/* ================= HOURS + MAP ================= */
+.visit-grid{display:grid;gap:2.4rem;margin-top:3rem}
+.hours-box{border:1px solid var(--line);border-radius:6px;background:var(--ink-2);padding:1.9rem 1.7rem}
+.hours-box h3{font-size:1.6rem;margin-bottom:1.3rem;display:flex;align-items:center;gap:.7rem}
+.hours-box h3 .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold);flex:none}
+.hrow{display:flex;justify-content:space-between;gap:1rem;padding:.75rem 0;border-bottom:1px dashed var(--line);font-size:.98rem}
+.hrow:last-child{border-bottom:0}
+.hrow .d{color:var(--cream)}
+.hrow .t{color:var(--gold-hi);font-variant-numeric:tabular-nums;font-family:'Tajawal',sans-serif}
+.hrow.now .d{font-weight:700}
+.addr{margin-top:1.4rem;padding-top:1.3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem;font-weight:300}
+.addr b{color:var(--cream);font-weight:500;display:block;margin-bottom:.2rem}
+.map-box{border:1px solid var(--line);border-radius:6px;overflow:hidden;position:relative;min-height:340px;display:flex;flex-direction:column}
+.map-box iframe{width:100%;flex:1;min-height:300px;border:0;filter:grayscale(.25) contrast(1.05)}
+.map-actions{padding:1rem;background:var(--ink-2);border-top:1px solid var(--line)}
+.btn-dir{width:100%;min-height:48px;border:1px solid var(--gold-deep);color:var(--gold-hi);border-radius:6px;display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font-weight:500;transition:background .3s}
+.btn-dir:hover{background:rgba(201,162,75,.08)}
+.btn-dir svg{width:18px;height:18px;fill:currentColor}
+@media(min-width:840px){.visit-grid{grid-template-columns:.9fr 1.1fr}}
+
+/* ================= CONTACT ================= */
+.contact{
+  text-align:center;position:relative;overflow:hidden;
+  background:radial-gradient(120% 100% at 50% 0%,rgba(201,162,75,.1),transparent 60%),var(--ink);
+}
+.contact .sec-title{margin-bottom:.6rem}
+.contact-lede{color:var(--muted);max-width:44ch;margin:0 auto 2.4rem;font-weight:300;font-size:1.08rem}
+.contact-cta{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+.contact-meta{margin-top:2.6rem;display:flex;flex-wrap:wrap;gap:.6rem 2.2rem;justify-content:center;color:var(--muted);font-size:.92rem}
+.contact-meta a{color:var(--gold-hi)}
+.contact-meta span{display:inline-flex;align-items:center;gap:.5rem}
+
+/* ================= FOOTER ================= */
+.footer{background:var(--ink-2);border-top:1px solid var(--line);padding:3rem 0 2.4rem;text-align:center}
+.footer .fmark{font-family:'Amiri',serif;font-size:1.5rem;margin-bottom:.5rem}
+.footer .fsub{color:var(--muted);font-size:.85rem;margin-bottom:1.6rem;font-weight:300}
+.footer .credit{
+  color:var(--muted);font-size:.82rem;line-height:2;
+  padding-top:1.4rem;border-top:1px solid var(--line);
+  max-width:60ch;margin:0 auto;
+}
+.footer .credit a{color:var(--gold-hi);border-bottom:1px solid var(--gold-deep);padding-bottom:1px}
+.footer .credit a:hover{color:var(--gold)}
+.footer .demo{display:block;margin-top:.9rem;font-size:.72rem;letter-spacing:.22em;color:var(--gold);font-family:'Cormorant Garamond',serif}
+
+/* ================= REVEAL ANIM ================= */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}
+.reveal.d2{transition-delay:.16s}
+.reveal.d3{transition-delay:.24s}
+.hero-inner .reveal{transform:translateY(18px)}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  .scroll-cue{display:none}
+  .card:hover,.btn:hover,.card:hover .media img,.gal-item:hover img{transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="مجوهرات غالب وزياد">
+      <span class="mark gold-text">غالب وزياد</span>
+      <span class="sub">مجوهرات · عمّان</span>
+    </a>
+    <nav class="nav-links" aria-label="التنقل">
+      <a href="#about">نبذة</a>
+      <a href="#collections">المجموعات</a>
+      <a href="#gallery">المعرض</a>
+      <a href="#visit">الموقع والأوقات</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/962788078224" target="_blank" rel="noopener">
+      واتساب
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="assets/storefront.jpg" alt="واجهة محل مجوهرات غالب وزياد بلافتته الذهبية على شارع السلطان قلاوون في عمّان" width="768" height="1024" fetchpriority="high">
+  </div>
+  <div class="wrap hero-inner">
+    <span class="hero-eyebrow reveal in">ذهب · عيار ٢١ و ٢٢</span>
+    <h1 class="reveal in d1"><span class="gold-text">مجوهرات</span><br>غالب وزياد</h1>
+    <p class="estd latin reveal in d1">Fine Gold &amp; Jewellery — Amman</p>
+    <p class="hero-lede reveal in d2">قِطَع تُروى، لا تُقتنى فقط. <b>سلاسل، أطقم، خواتم وأساور</b> منتقاة بعناية في قلب عمّان.</p>
+    <div class="hero-cta reveal in d3">
+      <a class="btn btn-gold" href="https://wa.me/962788078224" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.06 24l1.68-6.15A11.87 11.87 0 010 11.9C0 5.33 5.36 0 11.95 0a11.9 11.9 0 018.42 3.5 11.82 11.82 0 013.49 8.42c0 6.57-5.36 11.9-11.96 11.9a12 12 0 01-5.7-1.45L.06 24zM6.6 20.2c1.68 1 3.28 1.58 5.35 1.58 5.45 0 9.9-4.42 9.9-9.86a9.8 9.8 0 00-2.9-6.98A9.72 9.72 0 0011.96 2.1c-5.45 0-9.9 4.42-9.9 9.86 0 2.05.6 3.6 1.6 5.28l-.99 3.62 3.93-1.03zm11.36-5.55c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.29.18-1.42z"/></svg>
+        تواصل عبر واتساب
+      </a>
+      <a class="btn btn-ghost" href="#collections">استكشف المجموعات</a>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span>اكتشف</span><span class="line"></span></div>
+</section>
+
+<div class="frieze" aria-hidden="true"></div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about pad" id="about">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <span class="eyebrow reveal">نبذة عنّا</span>
+      <h2 class="sec-title reveal d1">حرفةٌ من ذهب،<br>وثقةٌ تُورَّث</h2>
+      <p class="reveal d1">في قلب عمّان، على <b>شارع السلطان قلاوون</b>، فتحت مجوهرات غالب وزياد أبوابها لتكون عنواناً للذهب الأصيل والذوق الرفيع. نختار كل قطعة كما لو كانت لعائلتنا — بلمعة صادقة ووزنٍ تثق به.</p>
+      <p class="reveal d2">من السلاسل الناعمة إلى الأطقم الكاملة، نجمع بين <b>الحِرفة اليدوية</b> وأناقة التصميم، مع خدمة صريحة في البيع والشراء والتبديل والتصميم حسب الطلب.</p>
+      <div class="stats reveal d2">
+        <div class="stat"><div class="n gold-text">٢١·٢٢</div><div class="l">عيار الذهب</div></div>
+        <div class="stat"><div class="n gold-text">٥٫٠</div><div class="l">تقييم الزوّار</div></div>
+        <div class="stat"><div class="n gold-text">عمّان</div><div class="l">قلب المدينة</div></div>
+      </div>
+    </div>
+    <div class="about-figure reveal d1">
+      <div class="photo"><img src="assets/medusa-set.jpg" alt="طقم ذهبي كامل بتصميم ميدوسا — قلادة وأساور وأقراط وخاتم" width="768" height="1024" loading="lazy"></div>
+      <div class="badge"><div class="n gold-text">GZ</div><div class="l">EST. AMMAN</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLLECTIONS ============ -->
+<section class="pad" id="collections">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">مجموعاتنا</span>
+      <h2 class="sec-title reveal d1">مختارات من الذهب</h2>
+      <p class="sec-intro reveal d1">تشكيلة تناسب كل مناسبة — من القطعة اليومية الأنيقة إلى الطقم الذي يُخطف به الأنظار.</p>
+    </div>
+
+    <div class="col-grid">
+      <article class="card reveal">
+        <div class="media"><img src="assets/chain.jpg" alt="سلسلة ذهبية رفيعة معلّقة على قاعدة عرض سوداء" width="768" height="1024" loading="lazy"></div>
+        <div class="body">
+          <span class="k">CHAINS</span>
+          <h3>سلاسل وقلائد</h3>
+          <p>سلاسل ذهبية بأطوال وسماكات متنوعة، بلمسة ناعمة تليق باليوم وبالمناسبة.</p>
+        </div>
+      </article>
+
+      <article class="card reveal d1">
+        <div class="media"><img src="assets/medusa-set.jpg" alt="طقم ذهبي كامل من قلادة وأساور وأقراط وخاتم بتصميم ميدوسا" width="768" height="1024" loading="lazy"></div>
+        <div class="body">
+          <span class="k">SETS</span>
+          <h3>أطقم كاملة</h3>
+          <p>أطقم متناسقة — قلادة وأساور وأقراط وخاتم — لإطلالة مكتملة في الأعراس والحفلات.</p>
+        </div>
+      </article>
+
+      <article class="card reveal d2">
+        <div class="media pattern"><span class="glyph">خ</span></div>
+        <div class="body">
+          <span class="k">RINGS</span>
+          <h3>خواتم ومحابس</h3>
+          <p>خواتم خطوبة ومحابس زواج، وتصاميم كلاسيكية وعصرية تُقاس على المقاس.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="media pattern"><span class="glyph">أ</span></div>
+        <div class="body">
+          <span class="k">BRACELETS</span>
+          <h3>أساور وإكسسوار</h3>
+          <p>أساور ذهبية ناعمة وفخمة، تُكمل أي إطلالة بلمسة من الدفء الذهبي.</p>
+        </div>
+      </article>
+
+      <article class="card reveal d1">
+        <div class="media pattern"><span class="glyph">هـ</span></div>
+        <div class="body">
+          <span class="k">GIFTS</span>
+          <h3>هدايا المناسبات</h3>
+          <p>هدايا الخطوبة والمواليد والتخرّج — نساعدك في اختيار القطعة التي تُفرح.</p>
+        </div>
+      </article>
+
+      <article class="card reveal d2">
+        <div class="media pattern"><span class="glyph">✦</span></div>
+        <div class="body">
+          <span class="k">CUSTOM</span>
+          <h3>تصميم حسب الطلب</h3>
+          <p>عندك فكرة؟ نصنعها لك. تصميم مخصّص وتبديل ودمج قطعك القديمة بقطعة جديدة.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="services">
+      <div class="service reveal"><span class="ico">١</span><div><h4>بيع وشراء الذهب</h4><p>تقييم صادق وأسعار واضحة حسب سعر الجرام اليومي.</p></div></div>
+      <div class="service reveal d1"><span class="ico">٢</span><div><h4>تبديل وتحديث</h4><p>بدّل قطعتك القديمة بتصميم جديد يعجبك.</p></div></div>
+      <div class="service reveal d2"><span class="ico">٣</span><div><h4>ضمان وأصالة</h4><p>ذهب موثوق بعياره، مع خدمة ما بعد البيع.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="frieze" aria-hidden="true"></div>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery pad" id="gallery">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">المعرض</span>
+      <h2 class="sec-title reveal d1">لمعةٌ عن قرب</h2>
+      <p class="sec-intro reveal d1">لقطات من داخل المحل ومن تشكيلتنا. للمزيد، مرحباً بك للزيارة أو المراسلة.</p>
+    </div>
+    <div class="gal-grid">
+      <figure class="gal-item gal-a reveal">
+        <img src="assets/storefront.jpg" alt="واجهة محل مجوهرات غالب وزياد بلافتته الذهبية والقوس الاحتفالي" width="768" height="1024" loading="lazy">
+        <figcaption class="cap">واجهة المحل — شارع السلطان قلاوون، عمّان</figcaption>
+      </figure>
+      <figure class="gal-item reveal d1">
+        <img src="assets/medusa-set.jpg" alt="طقم ذهبي كامل بتصميم ميدوسا معروض على قاعدة سوداء" width="768" height="1024" loading="lazy">
+        <figcaption class="cap">طقم كامل — قلادة وأساور وأقراط وخاتم</figcaption>
+      </figure>
+      <figure class="gal-item reveal d2">
+        <img src="assets/chain.jpg" alt="سلسلة ذهبية رفيعة معلّقة على قاعدة عرض" width="768" height="1024" loading="lazy">
+        <figcaption class="cap">سلسلة ذهبية ناعمة من تشكيلتنا</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="frieze" aria-hidden="true"></div>
+
+<!-- ============ VISIT (HOURS + MAP) ============ -->
+<section class="pad" id="visit">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow reveal">الموقع والأوقات</span>
+      <h2 class="sec-title reveal d1">زورونا في عمّان</h2>
+      <p class="sec-intro reveal d1">في قلب المدينة على شارع السلطان قلاوون — أبوابنا مفتوحة طوال الأسبوع.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="hours-box reveal">
+        <h3><span class="dot"></span> أوقات العمل</h3>
+        <div class="hrow"><span class="d">الأحد – الخميس</span><span class="t">٩:٠٠ ص – ١٠:٠٠ م</span></div>
+        <div class="hrow"><span class="d">الجمعة</span><span class="t">٣:٠٠ – ٧:٠٠ م</span></div>
+        <div class="hrow"><span class="d">السبت</span><span class="t">٩:٠٠ ص – ١٠:٠٠ م</span></div>
+        <div class="addr">
+          <b>العنوان</b>
+          شارع السلطان قلاوون، عمّان، الأردن
+          <br>هاتف: <span dir="ltr" style="unicode-bidi:embed">+962 7 8807 8224</span>
+        </div>
+      </div>
+      <div class="map-box reveal d1">
+        <iframe src="https://maps.google.com/maps?q=31.985500499999997,35.9239445&z=17&hl=ar&output=embed" title="موقع مجوهرات غالب وزياد على الخريطة" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map-actions">
+          <a class="btn-dir" href="https://maps.google.com/?cid=17714955913376359461&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+            الاتجاهات · Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="frieze" aria-hidden="true"></div>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact pad" id="contact">
+  <div class="wrap">
+    <span class="eyebrow reveal">تواصل معنا</span>
+    <h2 class="sec-title reveal d1">قطعتك القادمة بانتظارك</h2>
+    <p class="contact-lede reveal d1">أرسل لنا صورة لما تبحث عنه أو اسأل عن السعر مباشرةً — نردّ عليك بسرعة على واتساب.</p>
+    <div class="contact-cta reveal d2">
+      <a class="btn btn-gold" href="https://wa.me/962788078224" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.06 24l1.68-6.15A11.87 11.87 0 010 11.9C0 5.33 5.36 0 11.95 0a11.9 11.9 0 018.42 3.5 11.82 11.82 0 013.49 8.42c0 6.57-5.36 11.9-11.96 11.9a12 12 0 01-5.7-1.45L.06 24zM6.6 20.2c1.68 1 3.28 1.58 5.35 1.58 5.45 0 9.9-4.42 9.9-9.86a9.8 9.8 0 00-2.9-6.98A9.72 9.72 0 0011.96 2.1c-5.45 0-9.9 4.42-9.9 9.86 0 2.05.6 3.6 1.6 5.28l-.99 3.62 3.93-1.03zm11.36-5.55c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.42.25-.7.25-1.29.18-1.42z"/></svg>
+        راسلنا على واتساب
+      </a>
+      <a class="btn btn-ghost" href="tel:+962788078224">اتصل الآن</a>
+    </div>
+    <div class="contact-meta reveal d2">
+      <span>📍 شارع السلطان قلاوون، عمّان</span>
+      <span dir="ltr">📞 +962 7 8807 8224</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="fmark gold-text">مجوهرات غالب وزياد</div>
+    <div class="fsub">ذهب فاخر · عمّان، الأردن</div>
+    <div class="divider" aria-hidden="true"><span>◆</span></div>
+    <p class="credit">
+      صُمّم بواسطة <a href="https://aro.solutions" target="_blank" rel="noopener">ARO Solutions</a> — استوديو ويب لأصحاب الأعمال في عمّان.
+      من أعمالنا: <a href="https://khalilijewellery.com" target="_blank" rel="noopener">Khalili Jewellery</a>، أحد عملائنا في قطاع المجوهرات.
+      <span class="demo latin">Demo by ARO Solutions</span>
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  // Sticky header condense
+  var header=document.getElementById('header');
+  var onScroll=function(){
+    if(window.scrollY>40){header.classList.add('scrolled');}
+    else{header.classList.remove('scrolled');}
+  };
+  onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Scroll reveal
+  var reveals=document.querySelectorAll('.reveal');
+  if(reduce || !('IntersectionObserver' in window)){
+    reveals.forEach(function(el){el.classList.add('in');});
+  } else {
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+      });
+    },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+    reveals.forEach(function(el){ if(!el.classList.contains('in')) io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
